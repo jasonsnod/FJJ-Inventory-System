@@ -7,7 +7,9 @@
           <div class="welcome-container">
             <h1>Welcome</h1>
           </div>
-          <div role="alert" v-if="invalidCredentials">Invalid username and password!</div>
+          <div role="alert" v-if="invalidCredentials">
+            Invalid username and password!
+          </div>
           <div role="alert" v-if="$route.query.registration">
             Thank you for registering, please sign in.
           </div>
@@ -15,24 +17,43 @@
             <label for="username">Username</label>
             <div class="input-with-icon">
               <font-awesome-icon :icon="faUser" />
-              <input type="text" id="username" v-model="user.username" class="form-control" required autofocus />
+              <input
+                type="text"
+                id="username"
+                v-model="user.username"
+                class="form-control"
+                required
+                autofocus
+              />
             </div>
           </div>
           <div class="form-input-group">
             <label for="password">Password</label>
             <div class="input-with-icon">
               <font-awesome-icon :icon="faLock" />
-              <input type="password" id="password" v-model="user.password" class="form-control" required />
+              <input
+                type="password"
+                id="password"
+                v-model="user.password"
+                class="form-control"
+                required
+              />
             </div>
           </div>
 
           <!-- Forgot password link -->
           <div class="forgot-password-container">
-            <a href="#" class="forgot-password-link" @click.prevent="showForgotPasswordForm = !showForgotPasswordForm">
+            <a
+              href="#"
+              class="forgot-password-link"
+              @click.prevent="showForgotPasswordForm = !showForgotPasswordForm"
+            >
               Forgot Password?
             </a>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+          <button type="submit" class="btn btn-primary btn-block">
+            Sign in
+          </button>
         </form>
 
         <!-- Forgot password form -->
@@ -43,11 +64,30 @@
             <div v-if="!resetPasswordSuccess">
               <div class="form-input-group">
                 <label for="forgotPasswordEmail">Email</label>
-                <input type="email" id="forgotPasswordEmail" v-model="user.email" class="form-control" required />
+                <input
+                  type="email"
+                  id="forgotPasswordEmail"
+                  v-model="user.email"
+                  class="form-control"
+                  required
+                />
               </div>
-              <button type="button" class="btn btn-primary" @click="forgotPassword">Submit</button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                @click="forgotPassword"
+              >
+                Submit
+              </button>
             </div>
-            <button v-if="resetPasswordSuccess" type="button" class="btn btn-primary" @click="closeForgotPasswordForm">Close</button>
+            <button
+              v-if="resetPasswordSuccess"
+              type="button"
+              class="btn btn-primary"
+              @click="closeForgotPasswordForm"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -55,16 +95,13 @@
   </div>
 </template>
 
-
-
-
 <script>
 import authService from "../services/AuthService";
-import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
-import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
+import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
+import { faLock } from "@fortawesome/free-solid-svg-icons/faLock";
 
 export default {
-  name: 'App',
+  name: "App",
   data() {
     return {
       faUser: faUser,
@@ -73,10 +110,10 @@ export default {
       user: {
         username: "",
         password: "",
-        email: ""
+        email: "",
       },
       invalidCredentials: false,
-      showForgotPasswordForm: false
+      showForgotPasswordForm: false,
     };
   },
   methods: {
@@ -120,7 +157,7 @@ export default {
 
 <style scoped>
 .login-container {
-  background-image: url('./src/Images/logistics-stock-transport-shipping.jpg');
+  background-image: url("./src/Images/logistics-stock-transport-shipping.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -168,7 +205,6 @@ export default {
   width: 30%;
 }
 
-
 .input-with-icon {
   position: relative;
   display: flex;
@@ -186,22 +222,23 @@ export default {
 }
 
 .btn {
-width: 100%;
-display: inline-block;
-outline: 0;
-border:0;
-cursor: pointer;
-text-decoration: none;
-position: relative;
-color: #000;
-background: #fff;
-line-height: 1px;
-border-radius: 40px;
-padding: 20px;
-font-size: 30px;
-box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-transition: all 0.2s;
-transform: scale(1.01);
+  width: 100%;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 1px;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+  transform: scale(1.01);
 }
 
 .forgot-password-container {
