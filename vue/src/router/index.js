@@ -47,6 +47,14 @@ const routes = [
     meta: {
       requiresAuth: false
     }
+  },
+  {
+    path: "/inventory",
+    name: "inventory",
+    component: InventoryView,
+    meta: {
+      requiresAuth: true
+    }
   }
 ];
 
