@@ -6,6 +6,12 @@ import DashboardView from '../views/DashboardView.vue';
 import LoginView from '../views/LoginView.vue';
 import LogoutView from '../views/LogoutView.vue';
 import RegisterView from '../views/RegisterView.vue';
+import InventoryView from '../views/InventoryView.vue';
+import PickingView from '../views/PickingView.vue';
+import PurchasingView from '../views/PurchasingView.vue';
+import ReceivingView from '../views/ReceivingView.vue';
+import ReturnsView from '../views/ReturnsView.vue';
+import ShippingView from '../views/ShippingView.vue';
 
 /**
  * The Vue Router is used to "direct" the browser to render a specific view component
