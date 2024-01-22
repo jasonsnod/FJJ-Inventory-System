@@ -86,6 +86,14 @@ const routes = [
       requiresAuth: true,
     },
   },
+  {
+    path: "/returns",
+    name: "receiving",
+    component: ReturnsView,
+    meta: {
+      requiresAuth: true,
+    },
+  },
 ];
 
 // Create the router
