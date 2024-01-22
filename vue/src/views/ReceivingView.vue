@@ -1,6 +1,6 @@
 <template>
   <h1>ReceivingView</h1>
-  <router-link :to="dashboard">Dashboard</router-link>
+  <router-link :to="{name: 'dashboard'}">Dashboard</router-link>
 </template>
 
 <script>

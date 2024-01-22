@@ -101,7 +101,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { faLock } from "@fortawesome/free-solid-svg-icons/faLock";
 
 export default {
-  name: "App",
+  name: "LoginView",
   data() {
     return {
       faUser: faUser,
