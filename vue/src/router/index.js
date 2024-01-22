@@ -94,6 +94,14 @@ const routes = [
       requiresAuth: true,
     },
   },
+  {
+    path: "/shipping",
+    name: "shipping",
+    component: ShippingView,
+    meta: {
+      requiresAuth: true,
+    },
+  },
 ];
 
 // Create the router
