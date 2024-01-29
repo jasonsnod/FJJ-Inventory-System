@@ -88,7 +88,7 @@ const routes = [
   },
   {
     path: "/returns",
-    name: "receiving",
+    name: "returns",
     component: ReturnsView,
     meta: {
       requiresAuth: true,
