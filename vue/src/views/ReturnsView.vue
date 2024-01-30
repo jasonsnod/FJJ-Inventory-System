@@ -1,6 +1,5 @@
 <template>
   <h1>ReturnsView</h1>
-  <router-link :to="{name: 'dashboard'}">Dashboard</router-link>
 </template>
 
 <script>

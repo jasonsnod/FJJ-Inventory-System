@@ -4,6 +4,8 @@ import { createStore } from './store'
 import router from './router'
 import axios from 'axios'
 
+import '@fortawesome/fontawesome-free/js/all'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // Create the Vue app

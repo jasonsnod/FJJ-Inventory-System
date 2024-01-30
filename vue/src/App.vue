@@ -1,6 +1,7 @@
 <template>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8iMYY7eLq1GGem5uHvYRUFislFzL+8eFZ/woqm4u0FqFqBsJETqL8+8IEZ" crossorigin="anonymous">
-  <div id="capstone-app">
+  <div id="capstone-app" :style="{ 'margin-left': sidebarWidth }">
+    <Sidebar />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8iMYY7eLq1GGem5uHvYRUFislFzL+8eFZ/woqm4u0FqFqBsJETqL8+8IEZ" crossorigin="anonymous">
     <div id="nav">
       <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token !== ''">Logout</router-link>
     </div>
@@ -9,8 +10,15 @@
 </template>
 
 <script>
+import Sidebar from './components/sidebar/Sidebar.vue'
+import { sidebarWidth } from './components/sidebar/state';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: { Sidebar },
+  setup() {
+    return { sidebarWidth }
+  }
 };
 </script>
 
