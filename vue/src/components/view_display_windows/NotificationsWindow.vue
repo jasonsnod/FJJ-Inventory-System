@@ -20,9 +20,7 @@ export default {
 #notifications-window {
     padding: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     position: relative;
 }
 
@@ -38,8 +36,8 @@ h1 {
     border: 2px solid black;
     border-radius: 25px;
     padding: 10px;
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 400px;
 }
 
 .notifications-text {

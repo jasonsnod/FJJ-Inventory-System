@@ -20,8 +20,6 @@ export default {
 #daily-window {
     padding: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     position: relative;
 }
@@ -38,8 +36,8 @@ h1 {
     border: 2px solid black;
     border-radius: 25px;
     padding: 10px;
-    height: 400px;
-    width: 940px;
+    height: 500px;
+    width: 1280px;
 }
 
 .daily-text {

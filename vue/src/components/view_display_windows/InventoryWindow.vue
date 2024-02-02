@@ -19,6 +19,9 @@ export default {
 <style scoped>
 #inventory-window {
     padding: 10px;
+    display: flex;
+    justify-content: left;
+    position: relative;
 }
 
 h1 {
@@ -33,8 +36,8 @@ h1 {
     border: 2px solid black;
     border-radius: 25px;
     padding: 10px;
-    height: 400px;
-    width: 600px;
+    height: 500px;
+    width: 844px;
 }
 
 .inventory-text {

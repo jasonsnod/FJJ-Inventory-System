@@ -1,9 +1,13 @@
 <template>
     <div id="core-component">
-        <div class="pending-task-window"> <PendingTaskWindow /> </div>
-        <div class="notifications-window"> <NotificationsWindow /> </div>
-        <div class="analytics-window"> <AnalyticsWindow /> </div>
-        <div class="daily-window"> <DailyWindow /> </div>
+        <div id="top">
+            <div class="pending-task-window"> <PendingTaskWindow /> </div>
+            <div class="notifications-window"> <NotificationsWindow /> </div>
+            <div class="analytics-window"> <AnalyticsWindow /> </div>
+        </div>
+        <div id="bottom">    
+            <div class="daily-window"> <DailyWindow /> </div>
+        </div>    
     </div>
 </template>
 
@@ -18,19 +22,10 @@ export default {
 }
 </script>
 
-<style scoped>
-#core-component {
-}
-
-.pending-task-window {
-}
-
-.notifications-window {
-}
-
-.analytics-window {
-}
-
-.daily-window {
+<style>
+#top {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 </style>
