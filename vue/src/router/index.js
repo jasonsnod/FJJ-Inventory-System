@@ -12,6 +12,7 @@ import PurchasingView from "../views/PurchasingView.vue";
 import ReceivingView from "../views/ReceivingView.vue";
 import ReturnsView from "../views/ReturnsView.vue";
 import ShippingView from "../views/ShippingView.vue";
+import LogsView from "../views/LogsView.vue";
 
 /**
  * The Vue Router is used to "direct" the browser to render a specific view component
@@ -102,6 +103,14 @@ const routes = [
       requiresAuth: true,
     },
   },
+  {
+    path: "/logs",
+    name: "logs",
+    component: LogsView,
+    meta: {
+      requiresAuth: true,
+    }  
+  }
 ];
 
 // Create the router

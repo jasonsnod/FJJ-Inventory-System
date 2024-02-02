@@ -11,4 +11,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+/* Global styles can be added here */
+</style>

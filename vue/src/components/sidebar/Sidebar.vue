@@ -16,6 +16,7 @@
         <Sidebarlink to="/receiving" icon="fa-solid fa-pallet">Receiving</Sidebarlink>
         <Sidebarlink to="/shipping" icon="fa-solid fa-truck-fast">Shipping</Sidebarlink>
         <Sidebarlink to="/returns" icon="fa-solid fa-ghost">Returns</Sidebarlink>
+        <Sidebarlink to="/logs" icon="fa-solid fa-ghost">Logs</Sidebarlink>           <!--TODO: PLACEHOLDER ICON FOR ADDED VIEW-->
 
 
         <!-- The icon is rotated 180 degrees when the collapsed variable is true

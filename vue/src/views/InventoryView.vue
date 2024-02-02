@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "InventoryView",
+  name: "InventoryView"
 };
 </script>
 
