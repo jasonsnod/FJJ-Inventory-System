@@ -1,13 +1,19 @@
 <template>
   <!-- Binds the div to the value of the sidebar -->
   <div class="sidebar" :style="{ width: sidebarWidth }">
-    <h1>
+    <!-- <h1>
       <span v-if="collapsed">
         <div>N</div>
         <div>L</div>
       </span>
       <span v-else>Need A Logo</span>
-    </h1>
+    </h1> -->
+
+    <img
+      class="website-logo"
+      src="src\Images\website-logo.png"
+      alt="FJJ Inventory Systems Logo"
+    />
 
     <Sidebarlink to="/" icon="fa-solid fa-bars">Dashboard</Sidebarlink>
     <Sidebarlink to="/inventory" icon="fa-solid fa-boxes-stacked"
@@ -81,6 +87,10 @@ export default {
 
   display: flex;
   flex-direction: column;
+}
+
+.website-logo {
+  border-radius: 50%;
 }
 
 .collapse-icon {
