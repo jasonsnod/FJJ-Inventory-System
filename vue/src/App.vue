@@ -7,14 +7,16 @@
       integrity="sha384-GLhlTQ8iMYY7eLq1GGem5uHvYRUFislFzL+8eFZ/woqm4u0FqFqBsJETqL8+8IEZ"
       crossorigin="anonymous"
     />
-    <div id="nav">
-      <router-link
-        v-bind:to="{ name: 'logout' }"
-        v-if="$store.state.token !== ''"
-        >Logout</router-link
-      >
+    <div class="main-view">
+      <div id="nav">
+        <router-link
+          v-bind:to="{ name: 'logout' }"
+          v-if="$store.state.token !== ''"
+          >Logout</router-link
+        >
+      </div>
+      <router-view />
     </div>
-    <router-view />
   </div>
 </template>
 
@@ -34,6 +36,12 @@ export default {
 <style>
 #capstone-app {
   position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-view {
+  position: absolute;
   height: 100vh;
   width: 100vw;
 }
