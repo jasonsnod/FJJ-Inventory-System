@@ -36,8 +36,8 @@ h1 {
     border: 2px solid black;
     border-radius: 25px;
     padding: 10px;
-    height: 500px;
-    width: 1280px;
+    height: 40vh;
+    width: 90vw;
 }
 
 .daily-text {

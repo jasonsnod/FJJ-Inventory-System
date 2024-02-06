@@ -23,5 +23,9 @@ export default {
 </script>
 
 <style>
-/* Global styles can be added here */
+#capstone-app {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
 </style>
