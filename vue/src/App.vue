@@ -9,25 +9,20 @@
       crossorigin="anonymous"
     />
     <main id="main-view">
-      <div id="nav">
-        <router-link
-          v-bind:to="{ name: 'logout' }"
-          v-if="$store.state.token !== ''"
-          >Logout</router-link
-        >
-      </div>
+      <Header />
       <router-view />
     </main>
   </div>
 </template>
 
 <script>
-import Sidebar from "./components/sidebar/Sidebar.vue";
+import Header from "./components/core_views/Header.vue";
+import Sidebar from "./components/sidebar/sidebar.vue";
 import { sidebarWidth } from "./components/sidebar/state";
 
 export default {
   name: "App",
-  components: { Sidebar },
+  components: { Sidebar, Header },
   setup() {
     return { sidebarWidth };
   },

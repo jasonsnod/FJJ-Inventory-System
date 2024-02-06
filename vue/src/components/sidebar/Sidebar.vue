@@ -1,14 +1,6 @@
 <template>
   <!-- Binds the div to the value of the sidebar -->
   <div class="sidebar" :style="{ width: sidebarWidth }">
-    <!-- <h1>
-      <span v-if="collapsed">
-        <div>N</div>
-        <div>L</div>
-      </span>
-      <span v-else>Need A Logo</span>
-    </h1> -->
-
     <img
       class="website-logo"
       src="src\Images\website-logo.png"
