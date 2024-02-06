@@ -36,8 +36,8 @@ h1 {
     border: 2px solid black;
     border-radius: 25px;
     padding: 10px;
-    height: 500px;
-    width: 844px;
+    height: 30vh;
+    width: 59vw;
 }
 
 .order-text {
