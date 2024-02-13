@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 #order-window {
+    margin-left: 7%;
     padding: 10px;
     display: flex;
     justify-content: left;
@@ -37,7 +38,7 @@ h1 {
     border-radius: 25px;
     padding: 10px;
     height: 30vh;
-    width: 59vw;
+    width: 58vw;
 }
 
 .order-text {

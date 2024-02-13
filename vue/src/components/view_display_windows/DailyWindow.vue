@@ -5,7 +5,7 @@
                 <div class="daily-text">
                     <p>This is a placeholder for daily information.</p>
                 </div>
-        </div> 
+        </div>
     </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 #daily-window {
+    margin-left: 5%;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -37,11 +38,11 @@ h1 {
     border-radius: 25px;
     padding: 10px;
     height: 40vh;
-    width: 90vw;
+    width: 84vw;
 }
 
 .daily-text {
     text-align: center;
-    font-size: smaller; 
+    font-size: smaller;
 }
 </style>

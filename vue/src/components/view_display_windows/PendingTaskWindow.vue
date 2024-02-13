@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 #pending-task-window {
+    margin-left: 15%;
     padding: 10px;
     display: flex;
     justify-content: left;

@@ -5,9 +5,9 @@
             <div class="notifications-window"> <NotificationsWindow /> </div>
             <div class="analytics-window"> <AnalyticsWindow /> </div>
         </div>
-        <div id="bottom">    
+        <div id="bottom">
             <div class="daily-window"> <DailyWindow /> </div>
-        </div>    
+        </div>
     </div>
 </template>
 
@@ -23,9 +23,13 @@ export default {
 </script>
 
 <style>
+#core-component {
+margin-left: var(--sidebar-width);
+}
+
 #top {
-    display: flex;
-    justify-content: center;
-    position: relative;
+display: flex;
+justify-content: center;
+position: relative;
 }
 </style>

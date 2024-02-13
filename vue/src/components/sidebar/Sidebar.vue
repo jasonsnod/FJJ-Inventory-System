@@ -74,8 +74,10 @@ export default {
   bottom: 0;
   padding: 0.5em;
 
+  width: var(--sidebar-width);
   /* The ease timing function starts slowly, accelerates through the middle of the transition, and then slows down again as it reaches the end */
   transition: 0.3s ease;
+
 
   display: flex;
   flex-direction: column;
