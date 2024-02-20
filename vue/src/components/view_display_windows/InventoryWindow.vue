@@ -5,7 +5,7 @@
                 <div class="inventory-text">
                     <p>This is a placeholder for inventory information.</p>
                 </div>
-        </div> 
+        </div>
     </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 #inventory-window {
+    margin-left: 8%;
     padding: 10px;
     display: flex;
     justify-content: left;
@@ -37,7 +38,7 @@ h1 {
     border-radius: 25px;
     padding: 10px;
     height: 30vh;
-    width: 59vw;
+    width: 58vw;
 }
 
 .inventory-text {

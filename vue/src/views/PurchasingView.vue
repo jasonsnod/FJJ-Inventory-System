@@ -2,7 +2,7 @@
   <div id="purchasing-view">
     <h1>PurchasingView</h1>
   </div>
-  <div class="core-component"> <CoreComponent /> </div>    
+  <div class="core-component"> <CoreComponent /> </div>
 </template>
 
 <script>
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-/* Global styles can be added here */
+#purchasing-view {
+    margin-left: 10%;
+}
 </style>

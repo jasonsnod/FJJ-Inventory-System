@@ -14,6 +14,8 @@ export default {
 };
 </script>
 
-<style>
-/* Global styles can be added here */
+<style scoped>
+#shipping-view {
+    margin-left: 10%;
+}
 </style>

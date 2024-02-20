@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-/* Global styles can be added here */
+#receiving-view {
+    margin-left: 10%;
+}
 </style>
